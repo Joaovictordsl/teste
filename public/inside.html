@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parking Lot</title>
+  </head>
+
+  <header>
+    <button id="botoes" class="interna" ><a href="inside.html">Área Interna</a></button>
+    <button id="botoes" class="externa" ><a href="outside.html">Área Externa</a></button>
+    <button id="botoes" class="sair"><a href="index.html">Sair</a></button>
+  </header>
+  <body>
+    
+    <div class="parking-lot">
+        <div class="row123123">
+            <div id="vaga" class="spot"><h1>1</h1></div>
+        </div>
+
+        <div class="row">
+            <div id="vaga" class="spot"><h1>2</h1></div>
+            <div id="vaga" class="spot"><h1>3</h1></div>
+            <div id="vaga" class="spot"><h1>6</h1></div>
+            <div id="vaga" class="spot"><h1>7</h1></div>
+            <div id="vaga" class="spot"><h1>10</h1></div>
+            <div id="vaga" class="spot12"><h1>12</h1></div>
+            <div id="vaga" class="spot13"><h1>13</h1></div>
+            <div id="vaga" class="spot18"><h1>18</h1></div>
+            <div id="vaga" class="spot19"><h1>19</h1></div>
+        </div>
+
+        <div class="row1">
+            <div id="vaga" class="spot"><h1>4</h1></div>
+            <div id="vaga" class="spot"><h1>5</h1></div>
+            <div id="vaga" class="spot"><h1>8</h1></div>
+            <div id="vaga" class="spot"><h1>9</h1></div>
+            <div id="vaga" class="spot"><h1>11</h1></div>
+            <div id="vaga" class="spot14"><h1>14</h1></div>
+            <div id="vaga" class="spot15"><h1>15</h1></div>
+            <div id="vaga" class="spot20"><h1>20</h1></div>
+            <div id="vaga" class="spot21"><h1>21</h1></div>
+        </div>
+
+        <div class="row2">
+            <div id="vaga" class="spot"><h1>16</h1></div>
+            <div id="vaga" class="spot"><h1>17</h1></div>
+        </div>
+
+        <div class="row3">
+            <div id="vaga" class="spot22"><h1>22</h1></div>
+            <div id="vaga" class="spot23"><h1>23</h1></div>
+            <div id="vaga" class="spot24"><h1>24</h1></div>
+            <div id="vaga" class="spot25"><h1>25</h1></div>
+            <div id="vaga" class="spot26"><h1>26</h1></div>
+        </div>
+
+        <div class="row4">
+            <div id="vaga" class="spot27"><h1>27</h1></div>
+            <div id="vaga" class="spot28"><h1>28</h1></div>
+            <div id="vaga" class="spot29"><h1>29</h1></div>
+            <div id="vaga" class="spot30"><h1>30</h1></div>
+        </div>
+
+        <div class="row5">
+            <div id="vaga" class="spot"><h1>44</h1></div>
+            <div id="vaga" class="spot"><h1>43</h1></div>
+            <div id="vaga" class="spot"><h1>42</h1></div>
+            <div id="vaga" class="spot"><h1>41</h1></div>
+            <div id="vaga" class="spot"><h1>40</h1></div>
+            <div id="vaga" class="spot"><h1>39</h1></div>
+            <div id="vaga" class="spot"><h1>38</h1></div>
+            <div id="vaga" class="spot"><h1>37</h1></div>
+            <div id="vaga" class="spot"><h1>36</h1></div>
+            <div id="vaga" class="spot"><h1>35</h1></div>
+            <div id="vaga" class="spot"><h1>33</h1></div>
+            <div id="vaga" class="spot"><h1>32</h1></div>
+        </div>
+    </div>
+    <div class="orientation"><h2>Gire a tela!</h2></div>
+  </body>
+</html>
+
+<style>
+    a:link{
+        color:#fff;
+        text-decoration: none;
+    }
+    a:visited{
+        color: #000000;
+        text-decoration: none;
+
+    }
+
+
+    #botoes{
+        background-color: rgb(184, 162, 103);
+        border: 1px solid #000000;
+        
+        border-radius: 10px;
+        color: white;
+    }
+    .orientation{
+        display: none;
+    }
+
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:2000px 1200px;
+        opacity: 0.9;
+        
+    }
+    .row123123 .spot{
+        transform: rotate(-90deg);
+        margin-left: 30px;
+        margin-top:130px;
+}
+
+    .row {
+        margin-top: -100px;
+        display: flex;
+        margin-left: 110px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+}
+    .row1 {
+        margin-top: -23px;
+        margin-left: 110px;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+    .row2 {
+        margin-top: -310px;
+        margin-left: 437.5px;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+
+    .row3 {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+
+    .row4{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+    .row5{
+        margin-left: 110px;
+        margin-top: 25px;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+    .row .spot12{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 25px;
+        margin-top: -25px;
+    }
+    .row .spot13{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45.5px;
+        margin-top: 25px;
+    }
+    .row1 .spot14{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 25px;
+        margin-top: -25px;
+    }
+    .row1 .spot15{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45.5px;
+        margin-top: 25px;
+    }
+    .row .spot18{
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    .row .spot19{
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .row1 .spot20{
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    .row1 .spot21{
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .row3 .spot22{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 560px;
+        margin-top: -75px;
+    }
+    .row3 .spot23{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45.5px;
+        margin-top: -25px;
+    }
+    .row3 .spot24{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45.5px;
+        margin-top:25px;
+    }
+    .row3 .spot25{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45.5px;
+        margin-top: 75px;
+    }
+    .row3 .spot26{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45.5px;
+        margin-top: 125px;
+    }
+
+    .row4 .spot27{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: 750px;
+        margin-top: -245px;
+    }
+    .row4 .spot28{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45px;
+        margin-top: -195px;
+    }
+    .row4 .spot29{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45px;
+        margin-top: -145px;
+    }
+    .row4 .spot30{
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-left: -45px;
+        margin-top: -95px;
+    }
+
+.spot {
+  width: 40px;
+  height: 90px;
+  background-image: url("../img/carro.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: aqua;
+    border: 2px solid black;
+}
+
+ h1{
+    margin-top: 70%;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (orientation: portrait) {
+    header{
+        display:none;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:2000px 1200px;
+        zoom: 200%;
+        opacity: 0.9;
+        
+    }
+
+
+    .orientation{
+        display: flex;
+    }
+    div{
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 15px;
+        color: #fff;
+        }
+    
+
+    .parking-lot {
+        display: none;
+    }
+
+
+    .orientation{
+        display: flex;
+    }
+    }
+</style>
+
+<script>
+    const squares = document.querySelectorAll("#vaga");
+    const colors = ["aqua", "red", "yellow"];
+
+    squares.forEach( (vaga, index) => {
+        // Retrieve the saved color for this square from localStorage, or default to blue if no color is saved
+        const savedColor = localStorage.getItem(`vaga-${index}`) || "aqua";
+        
+        vaga.style.backgroundColor = savedColor;
+
+        vaga.addEventListener( "click", async () => {
+            const currentColor = vaga.style.backgroundColor;
+            const currentIndex = colors.indexOf(currentColor);
+            const nextIndex = (currentIndex + 1) % colors.length;
+            const nextColor = colors[nextIndex];
+            vaga.style.backgroundColor = nextColor;
+
+            // Save the new color for this square to localStorage
+            localStorage.setItem(`vaga-${index}`, nextColor);
+
+            const keys = Object.entries(localStorage); 
+            const data = {keys};
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+            const response = await fetch('/api', options);
+            const json = await response.json();
+            console.log(json); 
+            
+        });
+    });
+    
+</script>

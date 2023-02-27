@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Externa</title>
+</head>
+    <header>
+        <button id="botoes" class="interna" ><a href="inside.html">Área Interna</a></button>
+        <button id="botoes" class="externa" ><a href="outside.html">Área Externa</a></button>
+        <button id="botoes" class="sair"><a href="index.html">Sair</a></button>
+    </header>
+<body>
+    <div class="parking-lot">
+        <div class="row123123"> 
+            <div id="vaga" class="spot81"><h1>81</h1></div>
+            <div id="vaga" class="spot82"><h1>82</h1></div>
+            <div id="vaga" class="spot83"><h1>83</h1></div>
+            <div id="vaga" class="spot84"><h1>84</h1></div>
+
+        </div>
+
+        <div class="row">
+
+            <div id="vaga" class="spot"><h1>85</h1></div>
+            <div id="vaga" class="spot"><h1>86</h1></div>
+            <div id="vaga" class="spot"><h1>87</h1></div>
+            
+        </div>
+
+        <div class="row1"> 
+            <div id="vaga" class="spot77"><h1>77</h1></div>
+            <div id="vaga" class="spot78"><h1>78</h1></div>
+            <div id="vaga" class="spot79"><h1>79</h1></div>
+            <div id="vaga" class="spot80"><h1>80</h1></div>
+
+        </div>
+
+        <div class="row2">
+            <div id="vaga" class="spot75"><h1>75</h1></div>
+
+        </div>
+
+        <div class="row3">
+            <div id="vaga" class="spot76"><h1>76</h1></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<div class="orientation"><h2>Gire a tela!</h2></div>
+</html>
+
+<style>
+    a:link{
+        color:#fff;
+        text-decoration: none;
+    }
+    a:visited{
+        color: #000000;
+        text-decoration: none;
+
+    }
+
+
+    #botoes{
+        background-color: rgb(184, 162, 103);
+        border: 1px solid #000000;
+        
+        border-radius: 10px;
+        color: white;
+    }
+    .orientation{
+        display: none;
+    }
+
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:2000px 1200px;
+        opacity: 0.9;
+        
+    } 
+
+    .row2 .spot75{
+        margin-top: -40px;
+        margin-left: 590px;
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+    }
+    .row3 {
+
+        display: flex;
+        margin-left: 150px;
+        margin-top: -30px;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+
+    .row3 .spot76{
+        margin-left: 330px;
+        margin-top: -100px;
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+    }
+
+    .row123123 {  
+        display: flex;
+        margin-left: 150px;
+        margin-top: -30px;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        
+} 
+    .row1 {
+          
+        display: flex;
+        margin-left: 100px;
+        margin-top: -20px;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+    .row1 .spot77{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 46px;
+        margin-left: 200px;
+
+    }
+    .row1 .spot78{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 0px;
+        margin-left: -46px;
+
+    }
+    .row1 .spot79{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: -45px;
+        margin-left: -46px;
+
+    }
+    .row1 .spot80{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: -90px;
+        margin-left: -46px;
+
+    }
+
+    .row123123 .spot81{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 12px;
+        margin-left: 330px;
+
+    }
+    .row123123 .spot82{ 
+        transform: rotate(90deg); 
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 58px;
+        margin-left: -46px;
+    }
+    .row123123 .spot83{ 
+        transform: rotate(90deg); 
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 104px;
+        margin-left: -46px;
+    }
+    .row123123 .spot84{ 
+        transform: rotate(90deg); 
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 150px;
+        margin-left: -46px;
+    }
+
+    .row {  
+        margin-top: -15px;
+        display: flex; 
+        margin-left: 500px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+}
+
+
+.spot {
+  width: 40px;
+  height: 90px;
+  background-image: url("../img/carro.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: aqua;
+    border: 2px solid black;
+}
+
+ h1{
+    margin-top: 70%;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (orientation: portrait) {
+    header{
+        display:none;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:2000px 1200px;
+        zoom: 200%;
+        opacity: 0.9;
+        
+    }
+
+
+    .orientation{
+        display: flex;
+    }
+    div{
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 15px;
+        color: #fff;
+        }
+    
+
+    .parking-lot {
+        display: none;
+    }
+
+
+    .orientation{
+        display: flex;
+    }
+    }
+    
+</style>
+
+<script>
+    const squares = document.querySelectorAll("#vaga");
+    const colors = ["aqua", "red", "yellow"];
+
+    squares.forEach( (vaga, index) => {
+        // Retrieve the saved color for this square from localStorage, or default to blue if no color is saved
+        const savedColor = localStorage.getItem(`vaga-${index}`) || "aqua";
+        
+        vaga.style.backgroundColor = savedColor;
+
+        vaga.addEventListener( "click", async () => {
+            const currentColor = vaga.style.backgroundColor;
+            const currentIndex = colors.indexOf(currentColor);
+            const nextIndex = (currentIndex + 1) % colors.length;
+            const nextColor = colors[nextIndex];
+            vaga.style.backgroundColor = nextColor;
+
+            // Save the new color for this square to localStorage
+            localStorage.setItem(`vaga-${index}`, nextColor);
+
+            const keys = Object.entries(localStorage); 
+            const data = {keys};
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+            const response = await fetch('/api', options);
+            const json = await response.json();
+            console.log(json); 
+            
+        });
+    });
+</script>

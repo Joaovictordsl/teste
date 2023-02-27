@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color changing squares</title>
+	<style>
+		.square {
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			margin: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+
+	<script>
+		const squares = document.querySelectorAll(".square");
+		const colors = ["blue", "red", "yellow"];
+
+		squares.forEach((square, index) => {
+			// Retrieve the saved color for this square from localStorage, or default to blue if no color is saved
+			const savedColor = localStorage.getItem(`square-${index}`) || "blue";
+			square.style.backgroundColor = savedColor;
+
+			square.addEventListener("click", () => {
+				const currentColor = square.style.backgroundColor;
+				const currentIndex = colors.indexOf(currentColor);
+				const nextIndex = (currentIndex + 1) % colors.length;
+				const nextColor = colors[nextIndex];
+				square.style.backgroundColor = nextColor;
+
+				// Save the new color for this square to localStorage
+				localStorage.setItem(`square-${index}`, nextColor);
+			});
+		});
+	</script>
+</body>
+</html>
