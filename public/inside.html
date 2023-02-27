@@ -442,8 +442,8 @@ body{
             // Save the new color for this square to localStorage
             localStorage.setItem(`vaga-${index}`, nextColor);
 
-            const keys = Object.entries(localStorage); 
-            const data = {keys};
+            const key = Object.entries(localStorage); 
+            const data = {key};
             const options = {
                 method: 'POST',
                 headers: {

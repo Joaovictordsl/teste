@@ -15,5 +15,6 @@ app.post('/api', (request, response) => {
     database.insert(data);
     response.json({
         status: 'success',
+        color: data.key
     })
 });
